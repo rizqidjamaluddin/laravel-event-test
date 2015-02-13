@@ -12,11 +12,7 @@ class EventServiceProvider extends ServiceProvider {
 	 *
 	 * @var array
 	 */
-	protected $listen = [
-		TestEvent::class => [
-			'App\Handlers\Events\TestListener',
-		],
-	];
+	protected $listen = ['App\Events\TestEvent' => ['App\Handlers\Events\TestListener']];
 
 	/**
 	 * Register any other events for your application.

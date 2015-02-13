@@ -18,9 +18,4 @@ class TestEvent extends Event {
 		//
 	}
 
-    public function handle($event)
-    {
-        echo "Event: " . get_class($event);
-    }
-
 }
